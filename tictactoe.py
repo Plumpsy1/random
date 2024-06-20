@@ -57,7 +57,7 @@ def win_check(board):
         return "Win"
 
 
-while True is True:
+while True:
     player = "X"
     print("   1    2    3 ")
     print("a    ||   ||   ")
