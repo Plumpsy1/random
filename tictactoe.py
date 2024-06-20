@@ -54,13 +54,13 @@ def win_check(board):
     if board[1] == board[4] == board[7] and board[1] != " ":
         return "Win"
 
-    if board[2] == board[5] == board[8] and board[2] != " " :
+    if board[2] == board[5] == board[8] and board[2] != " ":
         return "Win"
 
-    if board[0] == board[4] == board[8] and board[0] != " " :
+    if board[0] == board[4] == board[8] and board[0] != " ":
         return "Win"
 
-    if board[2] == board[4] == board[6] and board[2] != " " :
+    if board[2] == board[4] == board[6] and board[2] != " ":
         return "Win"
 
 
