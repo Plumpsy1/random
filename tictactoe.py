@@ -30,6 +30,13 @@ def receive(person):
         return 8
 
 
+def check_ans(used, data):
+    len_used = len(used)
+    for a in range(0, len_used):
+        if used[a] == data:
+            return 1
+
+
 def win_check(board):
 
     if board[0] == board[1] == board[2] and board[0] != " ":
