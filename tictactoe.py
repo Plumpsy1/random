@@ -30,47 +30,30 @@ def receive(person):
         return 8
 
 
-def check_ans(used, data):
-    len_used = len(used)
-    for a in range(0, len_used):
-        if used[a] == data:
-            return 1
-
-
 def win_check(board):
 
-    board0 = board[0]
-    board1 = board[1]
-    board2 = board[2]
-    board3 = board[3]
-    board4 = board[4]
-    board5 = board[5]
-    board6 = board[6]
-    board7 = board[7]
-    board8 = board[8]
-
-    if board0 == board1 == board2 and board0 != " " and board1 != " " and board2 != " ":
+    if board[0] == board[1] == board[2] and board[0] != " ":
         return "Win"
 
-    if board3 == board4 == board5 and board3 != " " and board4 != " " and board5 != " ":
+    if board[3] == board[4] == board[5] and board[3] != " ":
         return "Win"
 
-    if board6 == board7 == board8 and board6 != " " and board7 != " " and board8 != " ":
+    if board[6] == board[7] == board[8] and board[6] != " ":
         return "Win"
 
-    if board0 == board3 == board6 and board0 != " " and board3 != " " and board6 != " ":
+    if board[0] == board[3] == board[6] and board[0] != " ":
         return "Win"
 
-    if board1 == board4 == board7 and board1 != " " and board4 != " " and board7 != " ":
+    if board[1] == board[4] == board[7] and board[1] != " ":
         return "Win"
 
-    if board2 == board5 == board8 and board2 != " " and board5 != " " and board8 != " ":
+    if board[2] == board[5] == board[8] and board[2] != " " :
         return "Win"
 
-    if board0 == board4 == board8 and board0 != " " and board4 != " " and board0 != " ":
+    if board[0] == board[4] == board[8] and board[0] != " " :
         return "Win"
 
-    if board2 == board4 == board6 and board2 != " " and board4 != " " and board6 != " ":
+    if board[2] == board[4] == board[6] and board[2] != " " :
         return "Win"
 
 
